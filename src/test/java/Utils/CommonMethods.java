@@ -37,7 +37,7 @@ public class CommonMethods extends PageInitializer {
                 if(ConfigReader.getPropertyValue("Headless").equals("true")){
                     ops.addArguments("--headless=new");
                 }
-                driver = new ChromeDriver();
+                driver = new ChromeDriver(ops);
                 break;
 
             case "Firefox":
